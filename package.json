@@ -38,29 +38,20 @@
     "prettier": "prettier \"**/*.{js,ts,md}\" --check --ignore-path .gitignore",
     "prettier:fix": "prettier \"**/*.{js,ts,md}\" --write --ignore-path .gitignore",
     "lint-staged": "lint-staged",
-    "prepare": "npm run build && husky install",
     "rollup": "rollup -c"
   },
   "devDependencies": {
-    "@rollup/plugin-typescript": "^8.2.5",
-    "@types/jest": "^26.0.24",
-    "@typescript-eslint/eslint-plugin": "^4.29.0",
-    "@typescript-eslint/parser": "^4.29.0",
-    "eslint": "^7.32.0",
-    "eslint-config-prettier": "^8.3.0",
-    "fetch-mock-jest": "^1.5.1",
-    "husky": "^7.0.1",
-    "jest": "^27.0.6",
-    "jest-junit": "^12.2.0",
-    "lint-staged": "^11.1.2",
-    "prettier": "2.3.2",
-    "rollup": "^2.56.3",
-    "ts-jest": "^27.0.4",
-    "typedoc": "^0.21.5",
-    "typescript": "^4.3.2",
-    "vite": "^2.4.4"
+    "@apollo/client": "^3.5.10",
+    "humps": "^2.0.1",
+    "isomorphic-fetch": "^3.0.0",
+    "jsona": "^1.9.7"
   },
   "dependencies": {
-    "@gdwc/drupal-state": "^2.4.1"
+    "@gdwc/drupal-state": "^2.5.2"
+  },
+  "peerDependencies": {
+    "graphql": ">=14.0.0 <15.0.0 || >=15.0.0 <16.0.0 || >=16.0.0 <17.0.0",
+    "tslib": "*",
+    "typescript": ">=4.0.0 <4.1.0 || >=4.1.0 <4.2.0 || >=4.2.0 <4.3.0 || >=4.3.0 <4.4.0 || >=4.4.0 <4.5.0 || >=4.5.0 <4.6.0"
   }
 }

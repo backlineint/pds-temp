@@ -4,7 +4,7 @@ export default [
   {
     input: 'index.ts',
     output: {
-      file: 'dist/decoupled-node-sdk.es.js',
+      file: 'dist/drupal-kit.es.js',
       format: 'es',
     },
     plugins: [typescript()],
@@ -12,9 +12,9 @@ export default [
   {
     input: 'index.ts',
     output: {
-      file: 'dist/decoupled-node-sdk.umd.js',
+      file: 'dist/drupal-kit.umd.js',
       format: 'umd',
-      name: 'DecoupledNodeSdk',
+      name: 'DrupalKit',
     },
     plugins: [typescript()],
   },

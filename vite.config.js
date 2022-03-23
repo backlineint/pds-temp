@@ -7,8 +7,8 @@ module.exports = {
   build: {
     lib: {
       entry: path.resolve(__dirname, 'index.ts'),
-      name: 'DecoupledNodeSDK',
-      fileName: format => `decoupled-node-sdk.${format}.js`,
+      name: 'DrupalKit',
+      fileName: format => `drupal-kit.${format}.js`,
     },
   },
 };
